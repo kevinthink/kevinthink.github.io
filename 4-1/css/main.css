@@ -1,0 +1,349 @@
+/*定義整體寬度 800px*/
+
+.body {
+    margin: 20px auto;
+    width: 800px;
+    border: px solid red;
+}
+
+
+/*最上一列 NAV */
+
+.nav {
+    height: 85px;
+    border: px solid green;
+}
+
+nav div {
+    font-size: 20px;
+}
+
+.nav-img {
+    position: relative;
+    top: 10px;
+    left: 20px;
+}
+
+.nav-1 {
+    position: relative;
+    top: 2px;
+    left: 150px;
+}
+
+.nav-2 {
+    position: relative;
+    top: 2px;
+    left: 170px;
+}
+
+.nav-3 {
+    position: relative;
+    top: 2px;
+    left: 190px;
+}
+
+.nav-4 {
+    position: relative;
+    top: 2px;
+    left: 210px;
+}
+
+.nav-5 {
+    position: relative;
+    top: 2px;
+    left: 230px;
+}
+
+.nav-6 {
+    position: relative;
+    top: 2px;
+    left: 250px;
+}
+
+.nav-7 {
+    position: relative;
+    top: 2px;
+    left: 270px;
+}
+
+.nav-8 {
+    position: relative;
+    top: 14px;
+    left: 300px;
+}
+
+
+/*建置時用的 方便看區塊大小*/
+
+article>div {
+    height: 400px;
+    border: px solid yellow;
+}
+
+
+/*文章 1*/
+
+.article-1 {
+    background-image: url(../images/1.jpg);
+    background-size: 100%;
+    color: white;
+}
+
+.article-1a {
+    position: relative;
+    top: 150px;
+    left: 230px;
+}
+
+.article-1b {
+    position: relative;
+    top: 160px;
+    left: 150px;
+}
+
+.article-1c {
+    position: relative;
+    top: 200px;
+    left: 280px;
+}
+
+.article-1d {
+    position: relative;
+    top: 200px;
+    left: 300px;
+}
+
+.article-2a {
+    width: 45%;
+    position: relative;
+    top: 80px;
+    left: 90px;
+}
+
+.article-2b {
+    width: 40%;
+    position: relative;
+    top: -140px;
+    left: 440px;
+}
+
+.article-2c {
+    position: relative;
+    top: -100px;
+    left: 440px;
+}
+
+
+/*文章 3 電腦 2 */
+
+.article-3 {
+    background-color: #fffcee;
+}
+
+.article-3a {
+    width: 40%;
+    position: relative;
+    top: 100px;
+    left: 100px;
+}
+
+.article-3b {
+    width: ;
+    position: relative;
+    top: -80px;
+    left: 100px;
+}
+
+.article-3c {
+    width: 45%;
+    position: relative;
+    top: 0px;
+    left: 280px;
+}
+
+
+/*文章 4*/
+
+.article-4 {
+    height: 300px;
+    background-image: url(../images/4.jpg);
+    background-size: 100%;
+    color: white;
+}
+
+.article-4a {
+    position: relative;
+    top: 60px;
+    left: 200px;
+}
+
+.article-4b {
+    position: relative;
+    top: 80px;
+    left: 110px;
+}
+
+.article-4c {
+    position: relative;
+    top: 120px;
+    left: 340px;
+}
+
+
+/*文章 5*/
+
+.article-5 {
+    margin-bottom: 5px;
+    height: 740px;
+    background-color: #fffcee;
+    border: px solid yellow;
+}
+
+.article-5a {
+    position: relative;
+    top: 60px;
+    left: 180px;
+}
+
+.article-5b {
+    position: relative;
+    top: 80px;
+    left: 120px;
+}
+
+.article-5c {
+    position: relative;
+    top: 110px;
+    left: 340px;
+}
+
+.article-5d {
+    position: relative;
+    top: 140px;
+    left: 50px;
+}
+
+.article-6 {
+    height: 200px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding-top: 80px
+}
+
+.article-7 {
+    height: 560px;
+    display: inline-block;
+    background-color: black;
+}
+
+.article-8 {
+    height: 280px;
+    background-image: url(../images/7.jpg);
+    background-size: 100%;
+    color: white;
+    text-align: center;
+}
+
+.article-8a {
+    position: relative;
+    top: 20px;
+    left: 0px;
+}
+
+.article-8b {
+    padding-left: 140px;
+    padding-right: 140px;
+    position: relative;
+    top: 36px;
+    left: 0px;
+}
+
+.article-8c {
+    position: relative;
+    top: 55px;
+    left: 0px;
+    border-radius: 50px;
+}
+
+.article-8d {
+    position: relative;
+    top: 60px;
+    left: 0px;
+}
+
+.article-9 {
+    height: 280px;
+    text-align: center;
+    padding-top: 50px
+}
+
+.article-9a {
+    position: relative;
+    top: 70px;
+    left: -160px;
+}
+
+.article-9b {
+    position: relative;
+    top: 79px;
+    left: -60px;
+}
+
+.article-9c {
+    position: relative;
+    top: 80px;
+    left: 65px;
+}
+
+.article-9d {
+    position: relative;
+    top: 80px;
+    left: 180px;
+}
+
+.article-10 {
+    height: 140px;
+    background-color: #fcf5ee;
+    line-height: 180px;
+    padding-left: 60px;
+}
+
+.in-block {
+    display: inline-block;
+    display: inline-block;
+}
+
+.article-10a {
+    position: relative;
+    top: -20px;
+    left: 100px;
+}
+
+.article-10b {
+    position: relative;
+    top: -14px;
+    left: 180px;
+}
+
+
+/*footer 區塊*/
+
+.footer {
+    height: 100px;
+    border: px solid green;
+    background-color: black;
+    color: white;
+}
+
+.footer-a {
+    position: relative;
+    top: 40px;
+    left: 40px;
+}
+
+.footer-b {
+    position: relative;
+    top: 10px;
+    left: 700px;
+}
