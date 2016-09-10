@@ -1,0 +1,62 @@
+/* 全體初始設定 及 指定容器計算為 border-box */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+
+/* 全體邊界設定及顏色設定 */
+
+* {
+    padding: 15px;
+    color: black
+}
+
+
+/* 指定 body 中為 850 像素 及 border型式 */
+
+body {
+    width: 850px;
+    border: 1px solid;
+    margin: 20px;
+    position:
+}
+
+
+/* 頁首字型設定:斜體;粗體;大小30像素 ; 文字居中對準 */
+
+header {
+    font-weight: bolder;
+    font-style: italic;
+    font-size: 30px;
+    text-align: center
+}
+
+
+/* 段落字型設定:微軟正黑體;大小20像素 */
+
+section,
+span {
+    font-family: "微軟正黑體";
+    font-size: 20px
+}
+
+
+/* 頁尾字型設定:微軟正黑體;大小:25像素 ; 文字居中對準 */
+
+footer {
+    font-family: "微軟正黑體";
+    font-size: 25px;
+    text-align: center
+}
+
+
+/*  段落中的項目名稱顏色設為藍色 */
+
+.section_item {
+    font-weight: bolder;
+    color: blue;
+    padding: 0px
+}
