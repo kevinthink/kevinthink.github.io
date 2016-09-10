@@ -1,0 +1,122 @@
+/*設定第一層容器 即手機設為背景圖*/
+
+.box {
+    margin: 50px auto;
+    width: 280px;
+    height: 569px;
+    border: 2px solid gray;
+    background-image: url(../images/aa.jpg);
+    background-size: 100%;
+    border-radius: 48px
+}
+
+
+/*設定二層容器 - 即手機螢幕區域,設為 position relative */
+
+.box-1 {
+    width: 242px;
+    height: 430px;
+    background-color: #00ffff;
+    position: relative;
+    top: 69px;
+    left: 17px
+}
+
+
+/*設定第三層容器 - 手機螢幕中文字 */
+
+.box-2 {
+    padding: 20px;
+    text-align: center;
+    font-style: italic;
+    font-size: 20px;
+    font-weight: bolder;
+    line-height: 100px;
+    color: blue
+}
+
+
+/*以下是四邊的天線條*/
+
+.antenna-1 {
+    width: 6px;
+    height: 10px;
+    background-color: #eaeaea;
+    position: relative;
+    top: -20px;
+    left: -20px;
+    float: left
+}
+
+.antenna-2 {
+    width: 6px;
+    height: 10px;
+    background-color: #eaeaea;
+    position: relative;
+    top: -20px;
+    left: 18px;
+    float: right
+}
+
+.antenna-3 {
+    width: 7px;
+    height: 10px;
+    background-color: #eaeaea;
+    position: relative;
+    top: 446px;
+    left: 25px;
+    float: right
+}
+
+.antenna-4 {
+    width: 7px;
+    height: 10px;
+    background-color: #eaeaea;
+    position: relative;
+    top: 446px;
+    left: -25px;
+    float: left
+}
+
+
+/*以下是二邊的按鍵*/
+
+.button-1 {
+    width: 5px;
+    height: 20px;
+    background-color: darkgrey;
+    position: relative;
+    top: 9px;
+    left: -34px;
+    float: left
+}
+
+.button-2 {
+    width: 5px;
+    height: 42px;
+    background-color: darkgrey;
+    position: relative;
+    top: 53px;
+    left: -38px;
+    float: left
+}
+
+.button-3 {
+    width: 5px;
+    height: 42px;
+    background-color: darkgrey;
+    position: relative;
+    top: 104px;
+    left: -43px;
+    float: left
+}
+
+.button-4 {
+    width: 4px;
+    height: 42px;
+    background-color: darkgrey;
+    position: relative;
+    top: 54px;
+    left: 35px;
+    float: right
+}
