@@ -1,0 +1,97 @@
+
+.img-1 {
+    background-image: url(http://unsplash.it/900?image=867);
+    background-repeat: no-repeat;
+    background-size: cover ;
+    max-width: 100%;
+    
+}
+
+.style-1 {
+    color: white;
+    text-align: center;
+}
+
+.margin-100 {
+    margin: 80px;
+}
+
+.style-2 {
+    text-align: center;
+    
+    }
+
+.font-30 {
+    font-size: 30px;
+}
+
+.font-20 {
+    font-size: 20px;
+    
+}
+
+.font-20 {
+    font-size: 20px;
+}
+
+.font-15 {
+    font-size: 15px;
+}
+
+.t-center {
+    text-align: center;
+}
+
+.margin-t-100 {
+    margin-top: 100px;
+}
+
+.margin-t-40 {
+    margin-top:40px;
+}
+
+.margin-b-100 {
+    margin-bottom: 100px;
+}
+
+.container-65{
+    width:65%;
+    margin:0 auto;
+}
+
+.img-center {
+    text-align: center;
+}
+
+
+.style-3 {
+    margin-top: 25px;
+    font-weight: 
+}
+
+.b-color {
+    background-color: #4a6fc4;
+    height: 50px; 
+    margin: 0px;
+    
+}
+
+.white {
+    color: white;
+}
+
+.font-25 {
+    font-size:25px;    
+}
+
+.margin-left-50 {
+    margin-left: 50px;
+}
+
+.margin-left-30 {
+    margin-left: 30px;
+}
+
+.margin-b-50 {
+    margin-bottom: 50px;
+}
