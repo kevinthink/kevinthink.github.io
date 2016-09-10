@@ -1,0 +1,28 @@
+/* 所有標籤共同設定*/
+
+* {
+    box-sizing: border-box;
+    font-family: "Arial";
+}
+
+
+/* 基本的標籤都設為 0 */
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+div,
+heander,
+nav,
+footer,
+aside,
+section,
+article {
+    margin: 0;
+    padding: 0;
+}

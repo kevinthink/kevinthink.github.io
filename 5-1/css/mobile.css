@@ -1,0 +1,315 @@
+/* 以下手機版 Media Query CSS */
+
+@media screen and (max-width:320px) {
+    /*定義整體為螢幕寬度的320px*/
+    .body {
+        margin: 20px auto;
+        width: 320px;
+        border: px solid red;
+    }
+    /*最上一列 NAV */
+    .nav {
+        height: 160px;
+        border: px solid green;
+    }
+    nav div {
+        font-size: 20px;
+    }
+    .nav-img {
+        display: block;
+        position: relative;
+        top: 10px;
+        left: 20px;
+    }
+    .nav-1 {
+        display: block;
+        position: relative;
+        top: 40px;
+        left: 20px;
+    }
+    .nav-2 {
+        display: block;
+        position: relative;
+        top: 16px;
+        left: 90px;
+    }
+    .nav-3 {
+        display: block;
+        position: relative;
+        top: -7px;
+        left: 170px;
+    }
+    .nav-4 {
+        display: block;
+        position: relative;
+        top: -30px;
+        left: 240px;
+    }
+    .nav-5 {
+        display: block;
+        position: relative;
+        top: 0px;
+        left: 20px;
+    }
+    .nav-6 {
+        display: block;
+        position: relative;
+        top: -24px;
+        left: 90px;
+    }
+    .nav-7 {
+        display: block;
+        position: relative;
+        top: -46px;
+        left: 170px;
+    }
+    .nav-8 {
+        display: block;
+        position: relative;
+        top: -78px;
+        left: 248px;
+    }
+    /*建置時用的 方便看區塊大小*/
+    article>div {
+        height: 400px;
+        border: px solid yellow;
+    }
+    /*文章 1*/
+    .article-1 {
+        background-image: url(../images/1.jpg);
+        background-size: cover;
+        color: white;
+    }
+    .article-1a {
+        text-align: center;
+        font-size: 24px;
+        position: relative;
+        top: 120px;
+        left: 0px;
+    }
+    .article-1b {
+        text-align: center;
+        position: relative;
+        top: 160px;
+        left: 0px;
+    }
+    .article-1c {
+        position: relative;
+        top: 200px;
+        left: 50px;
+        width: 100px
+    }
+    .article-1d {
+        position: relative;
+        top: 200px;
+        left: 70px;
+        width: 100px;
+    }
+    /*文章 2 電腦 1*/
+    .article-2a {
+        width: 80%;
+        position: relative;
+        top: 10px;
+        left: 30px;
+    }
+    .article-2b {
+        width: 80%;
+        position: relative;
+        top: 20px;
+        left: 30px;
+    }
+    .article-2c {
+        position: relative;
+        top: 60px;
+        left: 112px;
+        width: 100px;
+    }
+    /*文章 3 電腦 2 */
+    .article-3 {
+        background-color: #fffcee;
+    }
+    .article-3a {
+        width: 80%;
+        position: relative;
+        top: 220px;
+        left: 30px;
+    }
+    .article-3b {
+        position: relative;
+        top: 250px;
+        left: 120px;
+        width: 100px;
+    }
+    .article-3c {
+        width: 80%;
+        position: relative;
+        top: -80px;
+        left: 40px;
+    }
+    /*文章 4*/
+    .article-4 {
+        height: 400px;
+        background-image: url(../images/4.jpg);
+        background-size: cover;
+        color: white;
+    }
+    .article-4a {
+        font-size: 20px;
+        text-align: center;
+        position: relative;
+        top: 120px;
+        left: 0px;
+    }
+    .article-4b {
+        text-align: center;
+        position: relative;
+        top: 200px;
+        left: 0px;
+    }
+    .article-4c {
+        position: relative;
+        top: 280px;
+        left: 120px;
+        width: 100px;
+    }
+    /*文章 5*/
+    .article-5 {
+        margin-bottom: 5px;
+        height: 540px;
+        background-color: #fffcee;
+        border: px solid yellow;
+    }
+    .article-5a {
+        text-align: center;
+        position: relative;
+        top: 40px;
+        left: 0px;
+    }
+    .article-5b {
+        text-align: center;
+        position: relative;
+        top: 80px;
+        left: 0px;
+    }
+    .article-5c {
+        position: relative;
+        top: 140px;
+        left: 120px;
+        width: 100px;
+    }
+    .article-5d {
+        position: relative;
+        top: 180px;
+        left: 12px;
+    }
+    .article-6 {
+        height: 200px;
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding-top: 80px
+    }
+    .article-7 {
+        height: 330px;
+        display: ;
+        background-color: black;
+    }
+    /* 作者區塊 */
+    .article-8 {
+        height: 400px;
+        background-image: url(../images/7.jpg);
+        background-size: cover;
+        color: white;
+        text-align: center;
+    }
+    .article-8a {
+        font-size: 24px;
+        position: relative;
+        top: 40px;
+        left: 0px;
+    }
+    .article-8b {
+        font-size: 14px;
+        text-align: center;
+        position: relative;
+        top: 70px;
+        left: 0px;
+    }
+    .article-8c {
+        position: relative;
+        top: 100px;
+        left: 0px;
+        border-radius: 50px;
+    }
+    .article-8d {
+        font-size: 14px;
+        position: relative;
+        top: 120px;
+        left: 0px;
+    }
+    /* 4 個圖示超連結   */
+    .article-9 {
+        height: 300px;
+        text-align: center;
+        padding-top: 50px
+    }
+    .article-9a {
+        position: relative;
+        top: 50px;
+        left: -20px;
+    }
+    .article-9b {
+        position: relative;
+        top: 55px;
+        left: 6px;
+    }
+    .article-9c {
+        position: relative;
+        top: 55px;
+        left: 30px;
+    }
+    .article-9d {
+        position: relative;
+        top: 60px;
+        left: 40px;
+    }
+    .article-10 {
+        height: 300px;
+        background-color: #fcf5ee;
+        line-height: px;
+        padding-left: px;
+    }
+    .in-block {}
+    .article-10a {
+        text-align: center;
+        font-size: 24px;
+        position: relative;
+        top: 80px;
+        left: 0px;
+    }
+    .article-10b {
+        position: relative;
+        top: 140px;
+        left: 100px;
+        width: 100px;
+    }
+    /*footer 區塊*/
+    .footer {
+        height: 100px;
+        border: px solid green;
+        background-color: black;
+        color: white;
+    }
+    .footer-a {
+        font-size: 18px;
+        text-align: center;
+        position: relative;
+        top: 20px;
+        left: 0px;
+    }
+    .footer-b {
+        position: relative;
+        top: 30px;
+        left: 300px;
+    }
+}

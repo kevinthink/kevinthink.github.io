@@ -1,0 +1,277 @@
+/* 作業 6-1 BootStrap  */
+
+
+/* 控制 Jumbotron 中的圖文 在小視窗時 取消顯示 及 其它大小調整用 */
+@media screen and (max-width:767px) {
+    
+    .sm-display-none{display:none;}
+    
+    .sm-margin-0{margin:0px;} 
+    
+ .col-sm-1x  {width: calc(100% * 2 / 12);}
+    
+    .col-sm-2x  {width: calc(100% * 2 / 12);}
+    
+    .sm-container-30{width:30%;}
+    
+    
+}
+
+
+@media screen and (min-width:768px) and (max-width:991px) {    
+    .md-padding-left-50{padding-left: 50px;}   
+    .col-md-1x  {width: calc(100% * 2 / 12);}
+    .md-margin-l-30{margin-left: 30px;}
+    .md-container-80{width: 80%;}    
+    
+}
+
+@media screen and (min-width:992px) {    
+    .lg-padding-left-130{ padding-left: 130px;}
+    .lg-container-60{width: 60% ;}
+    
+}
+
+
+
+
+
+
+.container {
+    width: 100%
+}
+
+.header {
+    margin-top: 0px;
+    width: px;
+    height:600px;
+    border: px solid red;    
+    background-image: url(../images/slider-image-blurry.jpg);
+    background-size:cover;
+    max-width: 100%;
+    background-repeat: no-repeat;
+}
+
+.header-1 {
+    width: px;
+    height: 40px;
+    border: px solid yellow;
+    background-color: #343434;
+    line-height: 40px
+}
+
+
+/*第二列底圖上文字*/
+
+.header-box-11 {
+    position: relative;
+    top: 365px;
+    left:-160px;
+    margin: 0px;
+    padding-left: 14px;
+    width: 220px;
+    height: 50px;
+    border: px solid red;
+    background-color: #a84484;
+    color: white;
+    line-height: 50px
+}
+
+.header-box-12 {
+    position: relative;
+    top: 370px;
+    left: -160px;
+    margin: 0px;
+    padding: 0px;
+    width: 320px;
+    height: 100px;
+    border: px solid red;
+    background-color: black;
+    color: white;
+    line-height: 20px;
+}
+
+
+/*第三列白底紅字*/
+
+/*第4列*/
+
+.row4{background-color: #efefef;}
+
+.white {
+    color: white
+}
+
+.red {
+    color: red;
+}
+
+/*第 4 列 */
+
+.row5 {
+    background-color: black;
+    color: white;
+        height:50px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 50px;
+}
+
+.row4-buttom {
+    margin-top: 20px;
+    background-color: black;
+    height: 50px;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+}
+
+.row6 {
+    background-color: #3e3d3d;
+    color:white;
+}
+
+.in-block {
+    display: inline-block;
+}
+
+.float { float: left ; }
+
+.height-20 { height:50px;    
+    border: px solid yellow;    
+    
+}
+
+.back-white {
+    
+    background-color: white;
+    
+}
+
+.padding-20 {
+    padding: 20px;
+}
+
+.padding-left {
+    padding-left: 20px;
+}
+
+.line-height {
+    height: 50px;
+    
+    line-height:40px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.padding-left-50 { padding-left: 100px;
+    
+}
+
+.height-50 { height: 150px;
+    
+}
+
+.font-40 { font-size: 40px;
+    
+}
+
+.font-15 {font-size: 15px;
+    
+}
+
+.align-center { text-align: center;
+    
+}
+
+.margin-50 {margin:50px;
+    
+}
+
+.font-30 {
+    font-size: 30px;
+}
+
+.margin-top {
+    margin-top: 20px;
+}
+
+.margin-left { margin-left: 20px;
+    
+}
+
+.margin-top-50 {
+    margin-top: 50px;
+}
+
+.padding-right-100 {
+    padding-right: 100px;
+}
+
+.margin-buttom-50 {
+    margin-bottom: 50px;
+}
+
+.font-18 {
+    
+    font-size: 18px;
+    
+}
+
+.line-heigh {
+    line-height: 1.5;
+}
+
+.row7 { background-color: black;
+    
+}
+
+.padding-top-20 {
+    padding-top: 20px;
+}
+
+.margin-top-50 {
+    
+    margin-top: 50px;
+    
+}
+
+.container-60 {
+    
+    width:60%;
+    
+}
+
+.b-color {
+    background-color: black;
+}
+
+.margin-left-30 {
+    margin-left: 30px;
+}
+
+.font-20 {
+    font-size: 20px;
+}
+
+.margin-t-50 {
+    margin-top: 50px;
+}
+
+.h-40 {
+    height: 40px;
+}
+
+.margin-b-20 {
+    margin-bottom: 40px;
+}
+
+.black {
+    color: black;
+}
+
+.margin-t-30 {
+    margin-top: 30px;
+}
