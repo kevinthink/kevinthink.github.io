@@ -1,0 +1,87 @@
+* {
+    font-family: 微軟正黑體;
+    font-size: 25px;
+}
+
+.center {
+    display: block;
+    margin: 0 auto;
+}
+
+[^="sty"]{border=2px solid yellow; }
+
+.sty-1 {
+    width: 300px;
+    height:47px;
+    position: relative;
+    top: -420px;
+    left: -150px;
+    border: px solid yellow;
+    text-align: center;
+    line-height: 47px;
+}
+
+.sty-2 {
+    width: 300px;
+    height:47px;
+    position: relative;
+    top: -467px;
+    left:150px;
+    border: px solid yellow;
+    text-align: center;
+    line-height: 47px;
+}
+
+.sty-3 {
+    width: 300px;
+    height:47px;
+    position:relative;
+    top: -289px;
+    left: -150px;
+    border: px solid yellow;
+    text-align: center;
+    line-height: 47px;
+}
+
+.sty-4 {
+    
+    width: 300px;
+    height:47px;    
+    position: relative;
+    top:-336px;
+    left: 150px;
+    border: px solid yellow;
+    text-align: center;
+    line-height: 47px;
+}
+
+.color-yellow {
+    color:yellow;
+}
+
+.sty-btn {
+    position:relative;
+    top:-140px;
+    left:620px;
+}
+
+.color-white {
+    color:white;
+}
+
+.mar-t-50 {
+    margin-top: 50px;
+}
+
+.sty-in-1 {
+    position: relative;
+    top:0px;
+    left:280px;
+}
+
+.sty-in-2 {
+    position: relative;
+    top:0px;
+    left:280px;
+
+}

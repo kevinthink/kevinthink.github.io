@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+.sty-1 {
+    font-size: 20px;
+    background: white url('./images/person.png') no-repeat;
+    background-size: 40px;
+    padding: 5px 5px 5px 48px;
+    border: 0 solid grey;
+    border-bottom: 2px solid blue;
+    position: relative;
+    top: 50px;
+    left: 50px;
+}
+
+.sty-4 {
+    font-size: 20px;
+    background: white url('./images/mail.png') no-repeat;
+    background-size: 38px;
+    padding: 5px 5px 5px 48px;
+    border: 0 solid grey;
+    border-bottom: 2px solid blue;
+    position: relative;
+    top: 80px;
+    left: 50px;
+}
+
+.sty-5 {
+    font-size: 20px;
+    background: white url('./images/password.jpg') no-repeat;
+    background-size: 36px;
+    padding: 5px 5px 5px 48px;
+    border: 0 solid grey;
+    border-bottom: 2px solid blue;
+    position: relative;
+    top: 110px;
+    left: 50px;
+}
+
+.sty-6 {
+    font-size: 20px;
+    background: white url('./images/password.jpg') no-repeat;
+    background-size: 36px;
+    padding: 5px 5px 5px 48px;
+    border: 0 solid grey;
+    border-bottom: 2px solid blue;
+    position: relative;
+    top: 110px;
+    left: 55px;
+}
+
+.sty-2 {
+    background-color: white;
+    display: block;
+    margin: 0 auto;
+    width: 500px;
+    height: 500px;
+    border: px solid red;
+    border-radius: 40px;
+    position: relative;
+    top: 55px;
+}
+
+.sty-3 {
+    width: 700px;
+    height: 610px;
+    background-color: #c8c8ff;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    top: 50px;
+}
+
+.sty-7 {
+    width: 400px;
+    height: 50px;
+    background-color: #dfbef4;
+    position: relative;
+    top: 150px;
+    left: 50px;
+    border-radius: 5px;
+    font-size: 20px;
+    color: white;
+    line-height: 50px;
+    text-align: center;
+}
+
+.sty-8 {
+    width: 400px;
+    height: 30px;
+    border-bottom: 2px solid #a32cf0;
+    position: relative;
+    top: 155px;
+    left: 50px;
+}
+
+.sty-9 {
+    width: 400px;
+    height: 30px;
+    position: relative;
+    top: 136px;
+    left: 230px;
+}
+
+.sty-10 {
+    width: 400px;
+    height: 50px;
+    background-color: #813fac;
+    position: relative;
+    top: 153px;
+    left: 50px;
+    border-radius: 5px;
+    font-size: 20px;
+    color: white;
+    line-height: 50px;
+    text-align: center;
+}

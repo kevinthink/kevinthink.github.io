@@ -1,0 +1,327 @@
+    /* Media Query 來設定不同螢幕時 header 區塊的顯示效果*/
+    
+    @media screen and (max-width:768px) {
+        .sty-0-sm {
+            border: 3px solid blue;
+            height: px;
+            color: blue;
+            font-size: 20px;
+            line-height: px;
+            text-align: center;
+            margin-top: 20px;
+            padding: 20px;
+        }
+        .header-sm {
+            height: 350;
+        }
+        .sty-4-sm {
+            display: block;
+            margin: 0 auto;
+            margin-top: 35px;
+            font-size: 25px;
+        }
+        #mail-link {
+            display: none;
+        }
+        .sty-14-sm {
+            font-size: 20px;
+            display: block;
+            margin: 0 auto;
+            line-height: 60px;
+            border: px solid yellow;
+            text-align: center;
+        }
+    }
+    
+    @media screen and (min-width:769px) {
+        .sty-0-md {
+            border: 5px solid white;
+            height: px;
+            color: white;
+            font-size: 60px;
+            text-align: center;
+            line-height: px;
+            margin-bottom: 0px;
+            padding-top: 50px;
+            padding: 50px;
+        }
+        .sty-4-md {
+            display: block;
+            margin: 0 auto;
+            margin-top: 35px;
+            font-size: 30px;
+        }
+        #mail-logo {
+            display: none;
+        }
+        .sty-14-md {
+            font-size: 30px;
+            display: block;
+            margin: 0 auto;
+            line-height: 60px;
+            border: px solid yellow;
+            text-align: center;
+        }
+    }
+    
+    .sty-1 {
+        height: px;
+        background-image: url(../image/header.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-top: 30px;
+    }
+    
+    .white {
+        color: white;
+    }
+    
+    .sty-0 {
+        height: 200px;
+        color: white;
+        font-size: 60px;
+        text-align: center;
+        line-height: 200px;
+        margin-bottom: 100px;
+    }
+    
+    .margin-b-100 {
+        margin-bottom: 100px;
+    }
+    
+    .img-center {
+        display: block;
+        margin: 0 auto;
+    }
+    
+    .text-center {
+        text-align: center;
+        color: blue;
+        font-size: 20px;
+        font-family: 微軟正黑體;
+        font-weight: 600;
+    }
+    
+    .sty-3 {
+        margin: 25px;
+        width: 85%
+    }
+    
+    .mar-b-50 {
+        margin-bottom: 50px;
+    }
+    
+    .back-color-1 {
+        background-color: #e5e4e4;
+    }
+    
+    .mar-t-50 {
+        margin-top: 50px;
+    }
+    
+    .mar-b-30 {
+        margin-bottom: 30px;
+    }
+    /* 以下是設定圖片連結的顯示效果 Begin */
+    /* 首先 將所有 a 元素 下的第二張圖都設為 不顯示*/
+    
+    a img:nth-of-type(2) {
+        display: none;
+    }
+    /* 當滑鼠移至 Thumbnail 區域時 將 a 元素下的第一張圖設為 不顯示 */
+    /*link 1 Begin */
+    
+    .link1:hover a img:nth-of-type(1) {
+        display: none;
+    }
+    /* 當滑鼠移至 Thumbnail 區域時 將 a 元素下的第二張圖設為 顯示 並調整位置 */
+    
+    .link1:hover a img:nth-of-type(2) {
+        display: block;
+        margin: 25px auto;
+        width: 85%
+    }
+    /*link 1 End */
+    /* 以下為重覆上述 .link1 的設定內容 給各 Thumbnail 區塊 */
+    /* link 2 Begin */
+    
+    .link2:hover a img:nth-of-type(1) {
+        display: none;
+    }
+    
+    .link2:hover a img:nth-of-type(2) {
+        display: block;
+        margin: 25px auto;
+        width: 85%
+    }
+    /* link 2 End */
+    /* link 3 Begin */
+    
+    .link3:hover a img:nth-of-type(1) {
+        display: none;
+    }
+    
+    .link3:hover a img:nth-of-type(2) {
+        display: block;
+        margin: 25px auto;
+        width: 85%
+    }
+    /* link 3 End */
+    /* link 4-1 Begin */
+    
+    .link4-1:hover a img:nth-of-type(1) {
+        display: none;
+    }
+    
+    .link4-1:hover a img:nth-of-type(2) {
+        display: block;
+        margin: 25px auto;
+        width: 85%
+    }
+    /* link 4-1 End */
+    /* link 4-2 Begin */
+    
+    .link4-2:hover a img:nth-of-type(1) {
+        display: none;
+    }
+    
+    .link4-2:hover a img:nth-of-type(2) {
+        display: block;
+        margin: 25px auo;
+        width: 85%
+    }
+    /* link 4-2 End */
+    /* link 5-1 Begin */
+    
+    .link5-1:hover a img:nth-of-type(1) {
+        display: none;
+    }
+    
+    .link5-1:hover a img:nth-of-type(2) {
+        display: block;
+        margin: 25px auo;
+        width: 85%
+    }
+    /* link 5-1 End */
+    /* link 5-2 Begin */
+    
+    .link5-2:hover a img:nth-of-type(1) {
+        display: none;
+    }
+    
+    .link5-2:hover a img:nth-of-type(2) {
+        display: block;
+        margin: 25px auo;
+        width: 85%
+    }
+    /* link 5-2 End */
+    /* link 6-1 Begin */
+    
+    .link6-1:hover a img:nth-of-type(1) {
+        display: none;
+    }
+    
+    .link6-1:hover a img:nth-of-type(2) {
+        display: block;
+        margin: 25px auo;
+        width: 85%
+    }
+    /* link 6-1 End */
+    /* link 6-2 Begin */
+    
+    .link6-2:hover a img:nth-of-type(1) {
+        display: none;
+    }
+    
+    .link6-2:hover a img:nth-of-type(2) {
+        display: block;
+        margin: 25px auo;
+        width: 85%
+    }
+    /* link 6-2 End */
+    /* 設定圖片連結的顯示效果 End */
+    
+    .mar-b-20 {
+        margin-bottom: 20px;
+    }
+    
+    #aboutMe {
+        display: none;
+        font-size: 20px;
+        margin: 0px;
+        border: px solid yellow;
+    }
+    
+    .sty-5 {
+        background-color: white;
+        border: px solid red;
+        border-radius: 6px;
+        padding: 0px;
+        font-family: 微軟正黑體;
+        line-height: 1.5;
+        letter-spacing: 1px;
+    }
+    
+    .mar-t-30 {
+        margin-top: 30px;
+    }
+    
+    .padding-30 {
+        padding: 30px;
+    }
+    
+    .sty-6 {
+        position: relative;
+        left: 80px;
+    }
+    
+    .sty-7 {
+        display: block;
+        margin: 0 auto;
+    }
+    
+    .border {
+        border: px solid red;
+        height: 120px;
+    }
+    
+    .sty-9 {
+        border-radius: 60px;
+    }
+    
+    .sty-10 {
+        width: 100%;
+        height: 40px;
+        border-bottom: 3px solid #83c6ff;
+    }
+    
+    .sty-11 {
+        display: block;
+        margin: 0 auto;
+        position: relative;
+        top: -22px;
+        border-radius: 30px;
+    }
+    
+    .sty-12 {
+        margin-bottom: 5px;
+    }
+    
+    .sty-13 {
+        color: white;
+        height: px;
+        background-color: rgb(186, 191, 230);
+        display: block;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border-radius: 5px
+    }
+    
+    .sty-15 {
+        border-radius: 55px;
+    }
+    
+    .sty-16 {
+        border-radius: 55px;
+    }
