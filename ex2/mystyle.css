@@ -60,9 +60,11 @@
 }
 
 .sty-btn {
+    display: block;
+    margin:0 auto;
     position:relative;
-    top:-140px;
-    left:620px;
+    top:-150px;
+    left:0px;
 }
 
 .color-white {
