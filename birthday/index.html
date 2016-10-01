@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+
+    <!-- 外部連結使用 jQuery Mobile 樣式-->
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+
+    <!--    外部連結使用 jQuery 指令-->
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+
+    <!-- 外部連結使用 jQuery Mobile 指令-->
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="mystyle.css">
+
+
+</head>
+
+<body>
+
+
+    <!--主頁面 Begin-->
+
+    <div data-role="page" id="main" class="back-color">
+        <div data-role="content">
+
+            <p class="main-title-1">生日提醒妙管家</p>
+
+            <!--建立主頁族群按鈕/垂直型態 Begin-->
+            <div data-role="controlgroup" data-type="vertical">
+
+                <a href="#newUser" data-role="button">新增成員</a>
+
+                <a id="mainBtnAllUser" href="#userList" data-role="button">成員名單</a>
+
+                <a href="" data-role="button">連結3</a>
+
+                <a href="#setup" data-role="button">系統設定</a>
+
+
+
+            </div>
+            <!--建立主頁族群按鈕/垂直型態 End-->
+
+        </div>
+
+    </div>
+
+    <!--主頁面 End-->
+
+
+    <!-- 新增資料頁面 Begin-->
+
+    <div data-role="page" id="newUser" class="back-color">
+
+
+
+        <div data-role="content">
+
+            <p class="main-title-1">新增/編輯資料</p>
+
+            <!--    頂端的搜索列 Begin-->
+
+            <!--            <form method="" action="">-->
+
+            <div data-role="fieldcontain">
+
+                <laber for="searchName">找姓名</laber>
+                <input type="search" name="searchName" id="searchName" placeholder="找姓名">
+
+            </div>
+            <!--            </form>-->
+            <!--    頂端的搜索列 End-->
+
+            <!--輸入資料區塊 Begin-->
+
+            <!--        <div data-role="content">-->
+
+            <!--            <form method="" action="">-->
+
+            <label for="userName">姓名:</label>
+
+            <input type="text" name="userName" id="userName" placeholder="姓名或暱稱">
+
+
+            <label for="userBirth">生日:</label>
+
+            <input type="text" name="userBirth" id="userBirth" placeholder="格式為 : mm/dd">
+
+
+
+            <label for="userMail">E-mail:</label>
+
+            <input type="text" name="userMail" id="userMail" placeholder="1234@gmail.com">
+
+
+            <label for="userGroup">組群:</label>
+
+            <input type="text" name="userGroup" id="userGroup" placeholder="組群">
+
+            <label for="userNote">Note:</label>
+
+            <textarea name="userNote" id="userNote" placeholder="加上備註事項"></textarea>
+
+
+            <div class="ui-grid-a">
+
+                <div class="ui-block-a"> <a class="in-line mar-left" href="#main" data-role="button" data-icon="home">主頁面</a> </div>
+
+                <div class="ui-block-b">
+                    <button id="btnAddUser" class="btn btn-default in-line" data-grid="c">確定</button>
+                </div>
+                <div class="ui-block-a">
+                    <button id="btnAllUser" class="btn btn-default in-line" data-grid="c">成員列表</button>
+                </div>
+
+                <div class="ui-block-b">
+                    <button id="btnClearAll" class="btn btn-default in-line" data-grid="c">全部刪除</button>
+                </div>
+
+
+
+
+            </div>
+
+
+
+
+
+
+
+            <!--            </form>-->
+
+            <!--列出全體 user 清單區塊 Begin-->
+            <div id="list">
+
+                <table id="table"></table>
+
+
+            </div>
+            <!--列出全體 user 清單區塊 End -->
+        </div>
+
+    </div>
+
+    <!-- 新增資料頁面 End-->
+
+
+
+    <!--成員名單頁面 Begin-->
+
+    <div data-role="page" id="userList">
+
+        <div data-role="content">
+
+            <p class="main-title-1 mar-b-30">成員名單</p>
+
+            <table id="tableAllUser" class="table-sty-1"></table>
+
+            <a href="#newUser"><img class="icon-add-user" src="./images/plus_add_green.png" alt="" width="40px"></a>
+
+
+
+
+
+
+
+
+
+
+        </div>
+    </div>
+
+    <!--成員名單頁面 End-->
+
+
+    <!--系統功設定頁面 Begin-->
+
+    <div data-role="page" id="setup">
+
+        <!--設定區塊 Begin-->
+
+        <div data-role="content">
+
+            <p class="main-title-1">系統設定</p>
+
+            <!--幾天前提醒下拉選單-->
+            <p>幾天前提醒:</p>
+
+            <form method="" action="">
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+
+
+                        <select name="month" id="month">
+                         
+                         <option value="none">未選取</option>
+                         <option value="1month" selected>1個月</option>
+                         <option value="2month">2個月</option>
+                         <option value="3month">3個月</option>
+                         <option value="4month">4個月</option>
+                         <option value="5month">5個月</option>
+                         <option value="6month">6個月</option>
+                     
+                        </select>
+
+                        <select name="week" id="week">
+                         
+                         <option value="none">未選取</option>
+                         <option value="1week">1週</option>
+                         <option value="2week">2週</option>
+                         <option value="3week">3週</option>
+                         <option value="4week">4週</option>               
+                         
+                     </select>
+
+                        <select name="day" id="day">
+                         
+                         <option value="none">未選取</option>
+                         <option value="1day">1天</option>
+                         <option value="2day">2天</option>
+                         <option value="3day">3天</option>
+                         <option value="4day">4天</option>
+                         <option value="5day">5天</option>
+                         <option value="6day">6天</option>    
+                         
+                         
+                         
+                     </select>
+
+                    </fieldset>
+
+
+
+
+
+
+
+
+
+                </div>
+
+            </form>
+
+
+
+
+
+            <!-- 連續提醒 on/off 開關-->
+            <p class="in-line">連續提醒:</p>
+            <form method="" action="" class="in-line sty-sw">
+                <div data-role="fieldcontain" class="">
+
+                    <select name="remindSW" id="remindSW" data-role="slider" class="">
+                        
+                        <option value="on">ON</option>
+                        
+                        <option value="off">OFF</option>
+                        
+                        
+                        
+                        
+                        
+                        
+                    </select>
+
+
+
+
+                </div>
+
+
+
+
+            </form>
+
+
+
+
+
+
+
+
+
+
+            <p>字體大小:</p>
+
+            <p>版權所有:Kevin Chang</p>
+
+            <p>軟體版本:V 1.0</p>
+
+
+
+
+
+
+
+        </div>
+
+        <!--設定區塊 End-->
+
+        <a class="in-line mar-left" href="#main" data-role="button" data-icon="home">主頁面</a>
+
+        <a class="in-line mar-left" href="#" data-role="button" data-icon="back">回上頁</a>
+
+
+    </div>
+
+    <!--系統功設定頁面 End-->
+
+
+
+
+
+
+
+</body>
+
+</html>

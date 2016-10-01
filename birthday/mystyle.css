@@ -1,0 +1,85 @@
+* {
+    font-family: 微軟正黑體;
+    box-sizing: border-box;
+}
+
+table tr {
+    border: 1px solid black;
+    line-height: 30px;
+}
+
+th {
+    border: 1px solid black;
+    background-color: darkcyan;
+    color: white;
+    line-height: 30px;
+}
+
+
+/* 主頁面區塊 Begin */
+
+.main-title-1 {
+    background-color: blue;
+    text-align: center;
+    color: white;
+    height: 40px;
+    line-height: 40px;
+    letter-spacing: 5px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+
+/* 主頁面區塊 End */
+
+
+/* 共用設定 Begin*/
+
+.in-line {
+    display: inline-block;
+}
+
+.width-10 {
+    width: 10%;
+}
+
+.sty-sw {
+    position: relative;
+    top: 10px;
+    left: 90px;
+}
+
+.mar-left {
+    margin-left: 30px;
+}
+
+.mar-top-5 {
+    margin-top: 5px;
+}
+
+.mar-b-30 {
+    margin-bottom: 30px;
+}
+
+
+/* 共用設定 End */
+
+.back-color {
+    background: rgba(8, 74, 252, 0.09);
+}
+
+.table-sty-1 {
+    border: 1px solid black;
+    width: 100%;
+    text-align: center;
+}
+
+#tableAllUser:nth-child(even) {
+    background-color: ;
+}
+
+.icon-add-user {
+    position: fixed;
+    top: 460px;
+    right: 0px;
+}
