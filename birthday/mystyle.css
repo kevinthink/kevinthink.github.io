@@ -74,12 +74,35 @@ th {
     text-align: center;
 }
 
+
+/*
 #tableAllUser:nth-child(even) {
     background-color: ;
 }
+*/
 
 .icon-add-user {
     position: fixed;
     top: 460px;
     right: 0px;
+}
+
+
+/* 成員詳細資料區塊*/
+
+.userInfo {
+    
+    display:none;
+    
+    position: fixed;
+    top: 80px;
+    left: 30px;
+    border: 2px solid black;
+    width: 80%;
+    height: 200px;
+    background-color: rgb(209, 199, 252);
+}
+
+.userInfo>div {
+    margin: 10px;
 }

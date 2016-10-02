@@ -147,6 +147,9 @@ $(function () {
 
         //        var $list = $("#list");
 
+        //先將 #userInfo 區塊 設為不顯示        
+        $("#userInfo").css("display", "none");
+
         var flagGo = 0; // 是否列出清單旗標設為 0 ( 不作 )
 
         if (localStorage.length > 0 && flagListAllUser == 0) {
@@ -156,6 +159,7 @@ $(function () {
             flagGo = 1;
         };
 
+        //若符合列出清單條件 則列出成員清單 Begin
         if (flagGo == 1) {
 
 
@@ -253,12 +257,58 @@ $(function () {
             function clickHandler() {
                 alert("you just click on Tag");
                 alert(this.textContent);
+
+
+
+                //準備欄位點選時 顯示欄位中名字的所有欄位區塊 Begin
+                var $line1 = $("#line1")
+                var $line2 = $("#line2")
+                var $line3 = $("#line3")
+                var $line4 = $("#line4")
+                var $line5 = $("#line5")
+                var userNameToList = this.textContent;
+
+                for (var index = 0; index < localStorage.length; index++) {
+
+                    var userName = localStorage.key(index);
+                    var str = localStorage.getItem(userName);
+
+                    var contact = JSON.parse(str);
+
+                    if (contact.userName == userNameToList) {
+
+                        $line1.text("姓名:" + contact.userName);
+                        $line2.text("生日:" + contact.userBirth);
+                        $line3.text("Email:" + contact.userMail);
+                        $line4.text("群組:" + contact.userGroup);
+                        $line5.text("Note:" + contact.userNote);
+
+                        $("#userInfo").css("display", "inline");
+
+                    };
+
+                };
+
+
+
+
+
+
+
+
+
+                //準備欄位點選時 顯示欄位中名字的所有欄位區塊 End               
+
             };
 
             // 設定 td 欄位以供查詢區塊 End
 
 
+
+
         } else {};
+
+        //若符合列出清單條件 則列出成員清單 End
 
     });
     // 主頁中的 main-btnAllUser 點擊時 執行動作 End
