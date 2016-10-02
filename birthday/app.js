@@ -12,7 +12,14 @@ $(function () {
     var $btnAllUser = $("#btnAllUser");
     var $mainBtnAllUser = $("#mainBtnAllUser")
     var flagListAllUser = 0; //將已列出名單狀態設為 0 (未列出)
+    var flagEdit = 0; //已編輯狀態設為 0 ( 未編輯 )
     var numberUser = localStorage.length; //取得 localStorage 的資料列數 
+
+    var $line1 = $("#line1");
+    var $line2 = $("#line2");
+    var $line3 = $("#line3");
+    var $line4 = $("#line4");
+    var $line5 = $("#line5");
 
 
 
@@ -42,12 +49,16 @@ $(function () {
         $userGroup.val("");
         $userNote.val("");
 
+        flagEdit = 1; // 設定已編輯狀態為 1 ( 已編輯 )
+
 
     });
     // 當 $btnAddUser 點擊時 執行動作 End
 
+
+
     // 當 $btnAllUser 點擊時 執行動作 Begin
-    //Fixme 新建 table 及欄位待確認
+
     $btnAllUser.click(function () {
 
         var $list = $("#list");
@@ -159,6 +170,10 @@ $(function () {
             flagGo = 1;
         };
 
+        if (flagEdit == 1) {
+            flagGo = 1;
+        };
+
         //若符合列出清單條件 則列出成員清單 Begin
         if (flagGo == 1) {
 
@@ -240,6 +255,8 @@ $(function () {
             flagListAllUser = 1; // 將已列出名單狀態設為 1 (已列出)
             numberUser = localStorage.length;
 
+            flagEdit = 0; //將已編輯狀態 reset 為 0
+
 
             // 設定 td 欄位以供查詢區塊 Begin
             var $eachTd = $("td"); // 查詢 DOM 中所有元素 td
@@ -255,17 +272,17 @@ $(function () {
 
             // 函數 clickHandler 區塊
             function clickHandler() {
-                alert("you just click on Tag");
-                alert(this.textContent);
+//                alert("you just click on Tag");
+               //                alert(this.textContent);
 
 
 
                 //準備欄位點選時 顯示欄位中名字的所有欄位區塊 Begin
-                var $line1 = $("#line1")
-                var $line2 = $("#line2")
-                var $line3 = $("#line3")
-                var $line4 = $("#line4")
-                var $line5 = $("#line5")
+                //                var $line1 = $("#line1");
+                //                var $line2 = $("#line2");
+                //                var $line3 = $("#line3");
+                //                var $line4 = $("#line4");
+                //                var $line5 = $("#line5");
                 var userNameToList = this.textContent;
 
                 for (var index = 0; index < localStorage.length; index++) {
@@ -277,33 +294,35 @@ $(function () {
 
                     if (contact.userName == userNameToList) {
 
-                        $line1.text("姓名:" + contact.userName);
-                        $line2.text("生日:" + contact.userBirth);
-                        $line3.text("Email:" + contact.userMail);
-                        $line4.text("群組:" + contact.userGroup);
-                        $line5.text("Note:" + contact.userNote);
+                        $line1.text("姓名: " + contact.userName);
+                        $line2.text("生日: " + contact.userBirth);
+                        $line3.text("Email :" + contact.userMail);
+                        $line4.text("群組: " + contact.userGroup);
+                        $line5.text("Note: " + contact.userNote);
 
                         $("#userInfo").css("display", "inline");
 
                     };
 
                 };
-
-
-
-
-
-
-
-
-
                 //準備欄位點選時 顯示欄位中名字的所有欄位區塊 End               
 
             };
 
             // 設定 td 欄位以供查詢區塊 End
 
-
+            //            //編輯成員資料 Begin
+            //
+            //            $btnEditUser = $("#btnEditUser");
+            //
+            //            $btnEditUser.click(function () {
+            //
+            //                alert("Click !");
+            //
+            //                $userBirth.text($line1.val());
+            //
+            //            });
+            //            //編輯成員資料 End
 
 
         } else {};
@@ -312,5 +331,32 @@ $(function () {
 
     });
     // 主頁中的 main-btnAllUser 點擊時 執行動作 End
+
+
+    //編輯成員資料 Begin
+
+    $btnEditUser = $("#btnEditUser");
+
+    $btnEditUser.click(function () {
+
+//        alert("Click !");
+//
+//        var temp1 = $line1.text();
+//
+//        alert(temp1);
+
+
+
+        $userName.val($line1.text().substr(4));
+        $userBirth.val($line2.text().substr(4));
+        $userMail.val($line3.text().substr(7));
+        $userGroup.val($line4.text().substr(4));
+        $userNote.val($line5.text().substr(6));
+
+    });
+    //編輯成員資料 End
+
+
+
 
 });
