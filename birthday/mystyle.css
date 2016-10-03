@@ -17,6 +17,7 @@ th {
 
 a>i {
     color: darkcyan;
+    color: #32a8a8;
 }
 
 
@@ -24,7 +25,8 @@ a>i {
 
 .main-title-1 {
     background-color: #32a8a8;
-    text-align:center;
+    background-color: darkcyan;
+    text-align: center;
     color: white;
     height: 40px;
     line-height: 37px;
