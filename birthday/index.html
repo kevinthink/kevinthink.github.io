@@ -16,6 +16,9 @@
     <!-- 外部連結使用 jQuery Mobile 指令-->
     <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 
+    <!-- 設定 Font Awesome -->
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+
     <script src="app.js"></script>
     <link rel="stylesheet" href="mystyle.css">
 
@@ -28,11 +31,63 @@
     <!--主頁面 Begin-->
 
     <div data-role="page" id="main" class="back-color">
+
         <div data-role="content">
 
             <p class="main-title-1">生日提醒妙管家</p>
 
-            <!--建立主頁族群按鈕/垂直型態 Begin-->
+            <!--建立主頁連結按鍵 by Font Awesome Begin-->
+            <div id="mainPageText">
+
+                <!-- 第 1 列圖示 Begin -->
+                <div class="ui-grid-a">
+
+                    <!-- 第 1 列 圖 1   -->
+                    <div class="ui-block-a">
+
+                        <a class="list-group-item" href="#newUser" data-role="button"><i class="fa fa-pencil fa-2x" aria-hidden="true"></i></a>
+
+                    </div>
+
+                    <!-- 第 1 列 圖 2   -->
+                    <div class="ui-block-b">
+                        <a class="list-group-item" id="mainBtnAllUser" href="#userList" data-role="button"><i class="fa fa-list-alt fa-2x" aria-hidden="true"></i></a>
+
+                    </div>
+
+                </div>
+                <!-- 第 1 列圖示 End -->
+
+                <!-- 第 2 列圖示 Begin -->
+                <div class="ui-grid-a">
+
+                    <!--第 2 列 圖 1 -->
+                    <div class="ui-block-a">
+
+                        <a class="list-group-item" href="#" data-role="button"><i class="fa fa-calendar fa-2x" aria-hidden="true"></i></a>
+
+                    </div>
+
+                    <!--第 2 列 圖 2 -->
+                    <div class="ui-block-b">
+
+                        <a class="list-group-item" href="#setup" data-role="button"><i class="fa fa-cog fa-2x" aria-hidden="true"></i></a>
+
+                    </div>
+                </div>
+                <!-- 第 2 列圖示 End -->
+
+
+            </div>
+            <!--建立主頁連結按鍵 by Font Awesome End-->
+
+        </div>
+
+
+
+
+        <!--建立主頁族群按鈕/垂直型態 Begin-->
+        <!--
             <div data-role="controlgroup" data-type="vertical">
 
                 <a href="#newUser" data-role="button">新增成員</a>
@@ -46,9 +101,8 @@
 
 
             </div>
-            <!--建立主頁族群按鈕/垂直型態 End-->
-
-        </div>
+-->
+        <!--建立主頁族群按鈕/垂直型態 End-->
 
     </div>
 
@@ -111,17 +165,47 @@
 
             <div class="ui-grid-a">
 
-                <div class="ui-block-a"> <a class="in-line mar-left" href="#main" data-role="button" data-icon="home">主頁面</a> </div>
+                <div class="ui-block-a">
+                    <a href="#main" data-role="button">
+                        <i class="fa fa-home fa-lg" aria-hidden="true"></i>
+                    </a>
+                </div>
 
                 <div class="ui-block-b">
-                    <button id="btnAddUser" class="btn btn-default in-line" data-grid="c">確定</button>
+
+                    <a id="btnAddUser" href="#" data-role="button">
+
+                        <i class="fa fa-check fa-lg" aria-hidden="true"></i>
+
+                    </a>
+
+                    <!--                    <button id="btnAddUser" class="btn btn-default in-line" data-grid="c">確定</button>-->
+
+
                 </div>
                 <div class="ui-block-a">
-                    <button id="btnAllUser" class="btn btn-default in-line" data-grid="c">成員列表</button>
+
+                    <!--  fixme  初始階段的功能 可以去除了 ! 需改為切換到列出清單 而非在新增成員的下方-->
+
+                    <a id="btnAllUser" href="#" data-role="button">
+
+                        <i class="fa fa-list fa-lg" aria-hidden="true"></i>
+                    </a>
+
+                    <!--                    <button id="btnAllUser" class="btn btn-default in-line" data-grid="c">成員列表</button>-->
+
                 </div>
 
                 <div class="ui-block-b">
-                    <button id="btnClearAll" class="btn btn-default in-line" data-grid="c">全部刪除</button>
+
+                    <!-- Note:此按鍵尚未寫功能-->
+                    <a href="#" data-role="button">
+                        <i class="fa fa-trash fa-lg" aria-hidden="true"></i>
+                    </a>
+
+
+                    <!--                    <button id="btnClearAll" class="btn btn-default in-line" data-grid="c">全部刪除</button>-->
+
                 </div>
 
 
@@ -159,40 +243,9 @@
 
         <div data-role="content">
 
-
-
-
-
-
-
-
-
-
             <p class="main-title-1 mar-b-30">成員名單</p>
 
             <div id="userInfo" class="userInfo">
-
-                <div class="ui-grid-b">
-
-                    <div class="ui-block-a">
-
-                        <a id="btnEditUser" href="#newUser" data-role="button"><img src="./images/edit_sm.jpg" alt="" width="30px"></a>
-
-                    </div>
-                    <div class="ui-block-b">
-
-                    </div>
-
-                    <div class="ui-block-c">
-
-                        <a id="btnDeleteUser" href="#" data-role="button"><img src="./images/delete_sm.jpg" alt="" width="30px"></a>
-
-                    </div>
-
-
-
-
-                </div>
 
                 <div id="line1">姓名:</div>
                 <div id="line2">生日:</div>
@@ -200,21 +253,43 @@
                 <div id="line4">群組:</div>
                 <div id="line5">Note:</div>
 
+                <div class="ui-grid-b">
+
+                    <div class="ui-block-a">
+
+                        <a id="btnUserInfoClose" href="#" data-role="button">
+
+                            <i class="fa fa-check fa-lg" aria-hidden="true"></i>
+
+                        </a>
+
+
+                    </div>
+
+                    <div class="ui-block-b">
+
+                        <a id="btnEditUser" href="#newUser" data-role="button">
+                            <i class="fa fa-pencil fa-lg" aria-hidden="true"></i>
+                        </a>
+
+                    </div>
+
+                    <div class="ui-block-c">
+
+                        <a id="btnDeleteUser" href="#" data-role="button">
+
+                            <i class="fa fa-trash fa-lg" aria-hidden="true"></i>
+                        </a>
+
+                    </div>
+
+                </div>
 
             </div>
 
             <table id="tableAllUser" class="table-sty-1"></table>
 
             <a href="#newUser"><img class="icon-add-user" src="./images/plus_add_green.png" alt="" width="40px"></a>
-
-
-
-
-
-
-
-
-
 
         </div>
     </div>
@@ -279,19 +354,9 @@
                     </fieldset>
 
 
-
-
-
-
-
-
-
                 </div>
 
             </form>
-
-
-
 
 
             <!-- 連續提醒 on/off 開關-->
@@ -322,15 +387,6 @@
 
             </form>
 
-
-
-
-
-
-
-
-
-
             <p>字體大小:</p>
 
             <p>版權所有:Kevin Chang</p>
@@ -347,9 +403,17 @@
 
         <!--設定區塊 End-->
 
+
+        <a href="#main" data-role="button">
+            <i class="fa fa-home fa-lg" aria-hidden="true"></i>
+        </a>
+
+
+        <!--
         <a class="in-line mar-left" href="#main" data-role="button" data-icon="home">主頁面</a>
 
         <a class="in-line mar-left" href="#" data-role="button" data-icon="back">回上頁</a>
+-->
 
 
     </div>

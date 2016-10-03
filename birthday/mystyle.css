@@ -15,15 +15,19 @@ th {
     line-height: 30px;
 }
 
+a>i {
+    color: darkcyan;
+}
+
 
 /* 主頁面區塊 Begin */
 
 .main-title-1 {
-    background-color: blue;
-    text-align: center;
+    background-color: #32a8a8;
+    text-align:center;
     color: white;
     height: 40px;
-    line-height: 40px;
+    line-height: 37px;
     letter-spacing: 5px;
     margin-top: 0px;
     margin-bottom: 10px;
@@ -65,7 +69,7 @@ th {
 /* 共用設定 End */
 
 .back-color {
-    background: rgba(8, 74, 252, 0.09);
+    background: #ebebeb;
 }
 
 .table-sty-1 {
@@ -103,4 +107,22 @@ th {
 
 .userInfo>div {
     margin: 10px;
+}
+
+#mainPageText a {
+    font-size: 20px;
+    color: darkcyan;
+    line-height: 10px;
+}
+
+.mar-top-30 {
+    margin-top: 30px;
+}
+
+.mar-top-50 {
+    margin-top: 150px;
+}
+
+.mar-bottom-50 {
+    margin-bottom: 50px;
 }
